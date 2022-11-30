@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Site</title>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            margin: 0;
+            height: 100%;
+        }
+
+        .header {
+            background-color: rgb(255, 123, 0);
+            display: flex;
+        }
+
+        .middle {
+            background-color: rgb(255, 251, 0);
+            display: flex;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: red;
+            color: white;
+            text-align: center;
+            display: inline-block;
+        }
+
+        div {
+            display: flex;
+            padding: 1rem;
+            min-height: 1rem;
+            flex-grow: 1;
+        }
+
+        button {
+            display: flex;
+            margin: .5rem;
+            padding: 1rem;
+            min-height: 1rem;
+            flex-grow: 1;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .tab {
+            color: rgb(255, 255, 255);
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .tab-1 {
+            background-color: rgb(0, 140, 255);
+        }
+        .tab-2 {
+            background-color: rgb(255, 0, 0);
+        }
+        .tab-3 {
+            background-color: rgb(183, 0, 255);
+        }
+        .tab-4 {
+            background-color: rgb(0, 255, 170);
+        }
+
+        .logo {
+            background-color: rgb(0, 255, 0);
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <button class="tab tab-1">HOME</button>
+        <button class="tab tab-2">PROJECTS</button>
+        <div class="logo"></div>
+        <button class="tab tab-3">EXTRA</button>
+        <button class="tab tab-4">ABOUT</button>
+    </div>
+
+    <div class="middle">
+        <h1>Project 1</h1>
+        <h1>Project 2</h1>
+        <h1>Project 3</h1>
+    </div>
+
+    <div class="footer">
+        This is a Footer
+    </div>
+</body>
+
+</html>
